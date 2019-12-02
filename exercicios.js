@@ -30,8 +30,8 @@ imgs.forEach(function(element, index, array) {
 //1 elemento, não usa ';'
 /* imgs.forEach(element => console.log(element)); */
 
-const paragrafos = document.querySelectorAll('p');
+/* const paragrafos = document.querySelectorAll('p');
 
 paragrafos.forEach(element => {
     console.log(element.textContent);
-});
+}); */
