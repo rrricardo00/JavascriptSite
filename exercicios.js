@@ -96,8 +96,29 @@ links.forEach(element => {
 
 }); */
 
-const small = window.matchMedia('(max-width:720px)').matches;
+/* const small = window.matchMedia('(max-width:720px)').matches;
 if (small) {
     const menu = document.querySelector('.menu');
     menu.classList.add('.menu-mobile');
+} */
+
+const img = document.querySelector('img');
+const animaisLista = document.querySelector('.animais-lista');
+const linkExterno = document.querySelector('a[href^="http"]')
+
+function callback(e) {
+    console.log(e);
 }
+
+function callbacklLista(event) {
+    console.log(event.target, event.type);
+
+}
+
+function handleLinkExterno() {
+
+}
+
+animaisLista.addEventListener('click', callbacklLista);
+img.addEventListener('click', callback);
+linkExterno.addEventListener('click', handleLinkExterno);
