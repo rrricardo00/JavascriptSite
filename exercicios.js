@@ -122,13 +122,50 @@ function handleLinkExterno(event) {
 } */
 
 
-function h1click(event) {
+/* function h1click(event) {
 
     console.log(event.key);
-}
+} */
 
 /* animaisLista.addEventListener('click', callbacklLista);
 img.addEventListener('click', callback);
 linkExterno.addEventListener('click', handleLinkExterno);
 h1.addEventListener('click', h1click); */
-window.addEventListener('keydown', h1click);
+/* window.addEventListener('keydown', h1click); */
+
+/* const imgs = document.querySelectorAll('img');
+
+imgs.forEach(() => {
+    const imgs = document.addEventListener('click', handleImg);
+});
+
+function handleImg(event) {
+    console.log(event.target);
+}
+ */
+
+/* const links = document.querySelectorAll('a[href^="#"]');
+
+
+function handleLink(event) {
+    event.preventDefault()
+    links.forEach((link) => {
+        link.classList.remove('ativa');
+    });
+    event.target.classList.add('ativa');
+}
+
+links.forEach((link) => {
+    link.addEventListener('click', handleLink);
+}); */
+
+function clicar(event) {
+    console.log(event.currentTarget);
+}
+
+
+const todos = document.querySelectorAll('body *');
+
+todos.forEach((element) => {
+    element.addEventListener('click', clicar);
+});
