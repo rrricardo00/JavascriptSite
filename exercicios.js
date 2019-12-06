@@ -102,9 +102,10 @@ if (small) {
     menu.classList.add('.menu-mobile');
 } */
 
-const img = document.querySelector('img');
+/* const img = document.querySelector('img');
 const animaisLista = document.querySelector('.animais-lista');
 const linkExterno = document.querySelector('a[href^="http"]')
+const h1 = document.querySelector('h1');
 
 function callback(e) {
     console.log(e);
@@ -115,10 +116,19 @@ function callbacklLista(event) {
 
 }
 
-function handleLinkExterno() {
+function handleLinkExterno(event) {
+    event.preventDefault();
+    console.log(event)
+} */
 
+
+function h1click(event) {
+
+    console.log(event.key);
 }
 
-animaisLista.addEventListener('click', callbacklLista);
+/* animaisLista.addEventListener('click', callbacklLista);
 img.addEventListener('click', callback);
 linkExterno.addEventListener('click', handleLinkExterno);
+h1.addEventListener('click', h1click); */
+window.addEventListener('keydown', h1click);
