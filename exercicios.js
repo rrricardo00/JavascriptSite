@@ -159,8 +159,8 @@ links.forEach((link) => {
     link.addEventListener('click', handleLink);
 }); */
 
-function clicar(event) {
-    console.log(event.currentTarget);
+/* function clicar(event) {
+    event.target.remove();
 }
 
 
@@ -168,4 +168,12 @@ const todos = document.querySelectorAll('body *');
 
 todos.forEach((element) => {
     element.addEventListener('click', clicar);
-});
+}); */
+
+/* function teclado(event) {
+    if (event.key === 't') {
+        document.documentElement.classList.toggle('aumentar');
+    }
+}
+
+window.addEventListener('keydown', teclado); */

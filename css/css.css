@@ -184,6 +184,10 @@ body {
     font-weight: bold;
 }
 
+.aumentar {
+    font-size: 150%;
+}
+
 @media (max-width: 700px) {
     body {
         grid-template-columns: 1fr;
