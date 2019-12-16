@@ -177,3 +177,28 @@ todos.forEach((element) => {
 }
 
 window.addEventListener('keydown', teclado); */
+
+/* const lista = document.querySelector('.animais-lista');
+const contato = document.querySelector('.contato');
+const titulo = contato.querySelector('.titulo');
+const mapa = document.querySelector('.mapa');
+
+lista.appendChild(titulo); */
+
+//insertBefore(lista,animais)
+//removeChild
+//replaceChild(lista, animais)
+
+//-----------------------NOVOS ELEMENTOS
+
+/* const novoh1 = document.createElement('h1');
+novoh1.innerHTML = "TÍTULO FINAL";
+novoh1.classList.add('titulo');
+
+mapa.appendChild(novoh1); */
+
+/* const h1 = document.querySelector('h1');
+const faq = document.querySelector('.faq');
+
+const cloneH1 = h1.cloneNode(true);
+faq.appendChild(cloneH1); */
