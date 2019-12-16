@@ -177,3 +177,8 @@ todos.forEach((element) => {
 }
 
 window.addEventListener('keydown', teclado); */
+
+/* const h1 = document.querySelector('h1'); */
+
+const lista = document.querySelector('.animais-lista');
+
