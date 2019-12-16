@@ -202,3 +202,6 @@ const faq = document.querySelector('.faq');
 
 const cloneH1 = h1.cloneNode(true);
 faq.appendChild(cloneH1); */
+/* const h1 = document.querySelector('h1'); */
+
+const lista = document.querySelector('.animais-lista');
