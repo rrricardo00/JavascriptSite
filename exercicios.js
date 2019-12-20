@@ -204,4 +204,14 @@ const cloneH1 = h1.cloneNode(true);
 faq.appendChild(cloneH1); */
 /* const h1 = document.querySelector('h1'); */
 
-const lista = document.querySelector('.animais-lista');
+// const lista = document.querySelector('.animais-lista');
+
+//objetos constructor
+
+function Carro() {
+    this.marca = 'Marca';
+    this.preco = 0;
+}
+
+honda = new Carro();
+honda.qualquercoisa = "qualquercoisa";
