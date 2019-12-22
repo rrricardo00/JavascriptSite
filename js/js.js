@@ -97,7 +97,6 @@ function scrollAnimado() {
 
 
 
-
 initTabNav();
 initAccordion();
 initScrollSuave();

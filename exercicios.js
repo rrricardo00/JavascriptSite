@@ -208,10 +208,41 @@ faq.appendChild(cloneH1); */
 
 //objetos constructor
 
-function Carro() {
-    this.marca = 'Marca';
-    this.preco = 0;
+// function Carro() {
+//     this.marca = 'Marca';
+//     this.preco = 0;
+// }
+
+// honda = new Carro();
+// honda.qualquercoisa = "qualquercoisa";
+
+// function Dom(seletor) {
+
+//     this.element = () => {
+//         return document.querySelector(seletor);
+//     }
+//     this.ativar = () => {
+//         this.element().classList.add('ativar');
+//     }
+// }
+
+// const li = new Dom('li');
+// const liUltimo = new Dom('li:last-child');
+// const ul = new Dom('ul');
+
+function Dom(elemento) {
+    const element = document.querySelectorAll(elemento);
+    this.elements = element;
+    this.addClass = (classe) => {
+        element.forEach((element) => {
+            element.classList.add(classe);
+        });
+    }
+    this.removeClass = (classe) => {
+        element.forEach((element) => {
+            element.classList.remove(classe);
+        });
+    }
 }
 
-honda = new Carro();
-honda.qualquercoisa = "qualquercoisa";
+const lista = new Dom('li');
