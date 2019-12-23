@@ -230,19 +230,19 @@ faq.appendChild(cloneH1); */
 // const liUltimo = new Dom('li:last-child');
 // const ul = new Dom('ul');
 
-function Dom(elemento) {
-    const element = document.querySelectorAll(elemento);
-    this.elements = element;
-    this.addClass = (classe) => {
-        element.forEach((element) => {
-            element.classList.add(classe);
-        });
-    }
-    this.removeClass = (classe) => {
-        element.forEach((element) => {
-            element.classList.remove(classe);
-        });
-    }
-}
+// function Dom(elemento) {
+//     const element = document.querySelectorAll(elemento);
+//     this.elements = element;
+//     this.addClass = (classe) => {
+//         element.forEach((element) => {
+//             element.classList.add(classe);
+//         });
+//     }
+//     this.removeClass = (classe) => {
+//         element.forEach((element) => {
+//             element.classList.remove(classe);
+//         });
+//     }
+// }
 
-const lista = new Dom('li');
+// const lista = new Dom('li');
