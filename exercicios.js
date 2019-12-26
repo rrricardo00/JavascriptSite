@@ -255,3 +255,28 @@ faq.appendChild(cloneH1); */
 //----------------------------------------------------------------------------
 
 
+// function Pessoa(nome, sobrenome, idade) {
+//     this.nome = nome;
+//     this.sobrenome = sobrenome;
+//     this.idade = idade;
+// }
+
+// Pessoa.prototype.nomeCompleto = function() {
+//     return `${this.nome} ${this.sobrenome} tem ${this.idade} anos`;
+// }
+
+// const ricardo = new Pessoa('Ricardo', 'Rosa', 29);
+
+//NATIVOS---------------------------------------------
+//
+//OBJECT
+//STRING
+//ARRAY
+//FUNCTION
+//
+//
+//DO HOST---------------------------------------------
+//DOM
+//NODELIST
+//HTMLCOLLECTION
+//ELEMENT
