@@ -244,11 +244,10 @@ faq.appendChild(cloneH1); */
 //         });
 //     }
 // }
-<<<<<<< HEAD
 
 // const lista = new Dom('li');
 
-const lista = ['cachorro', 'gato', 'pinguim'];
+// const lista = ['cachorro', 'gato', 'pinguim'];
 
 //TRANSFORMAR EM ARRAY--------------------------------------------------------
 // const lista = Array.prototype.slice.call('variavel');  ou
@@ -256,7 +255,3 @@ const lista = ['cachorro', 'gato', 'pinguim'];
 //----------------------------------------------------------------------------
 
 
-=======
-
-// const lista = new Dom('li');
->>>>>>> 191a6ffb0d6cf509b40b798dc466b88f90f38632
