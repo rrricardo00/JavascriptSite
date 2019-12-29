@@ -280,3 +280,4 @@ faq.appendChild(cloneH1); */
 //NODELIST
 //HTMLCOLLECTION
 //ELEMENT
+
