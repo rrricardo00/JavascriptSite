@@ -292,5 +292,6 @@ faq.appendChild(cloneH1); */
 //split
 //join
 //trim - end - start - remover esppaçoes em branco
+//colocar '+' na frente de string transforma em número
 
 
