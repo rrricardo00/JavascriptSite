@@ -284,4 +284,14 @@ faq.appendChild(cloneH1); */
 //STRING----------------
 //CONCAT = CONCATENAR STRINGS
 //INCLUDE = PROCURA PALAVRA EM UMA STRING, PODE SER A PARTIR DE ALGUM INDEX
-// 
+//ENDWITH
+//STARTWITH
+//STR.SLICE(START, END)
+//STR.SUBSTRING
+//padStart('valor', 'numero de padding')/padEnd
+//split
+//join
+//trim - end - start - remover esppaçoes em branco
+//colocar '+' na frente de string transforma em número
+
+
