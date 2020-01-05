@@ -289,9 +289,22 @@ faq.appendChild(cloneH1); */
 //STR.SLICE(START, END)
 //STR.SUBSTRING
 //padStart('valor', 'numero de padding')/padEnd
-//split
+//split - transforma tudo em array
 //join
-//trim - end - start - remover esppaçoes em branco
+//trim - end - start - remover esppaços em branco
 //colocar '+' na frente de string transforma em número
+//replace('x', 'y')
 
 
+//NUMBER E MATH-----------------------
+//parseInt, parseFloat => podem retornar apenas numero de string se espaçados
+//numero.tofixed() = arredondar, casa decimal dentro do parenteses
+//numero.toString
+//numero.toLocaleString = transfomar em moeda
+
+// let valor = 48.50;
+// valor = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+// console.log(valor);
+
+//aleatorio min e max = Math.floor(Math.random() * (max - min + 1) + min)
+//... = espread operation = dá cada item do array (vai apssar por cada item), array[0], array[1], etc
