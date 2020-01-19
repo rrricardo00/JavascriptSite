@@ -326,3 +326,8 @@ faq.appendChild(cloneH1); */
 //[].lastindexof(valor) - retorna o último index
 //[].slice(inicio, final) - retorna itens do inicio ao fim - usado para clonar arrays
 
+//ARRAY E ITEERAÇÃO-------------------------------
+//[].FOREACH(CALLBACK(ITEM,INDEX,ARRAY))
+//[].MAP - MESMO QUE O FOREACH, RETONAR ARRAY E NAO UNDEFINED
+//[].REDUCE(CALLBACK(ACUMULADOR,VALORATUAL,INDEX,ARRAY), VALORINICIAL) - ACUMULADOR É O RETORNO DA ITERAÇÃO ANTERIOR - FUNCIONA COMO 'INCREMENTO' - se não passar valorinicial, pula o primeiro acumulador no console, mas soma do mesmo jeito, fazendo uma iteração a menos
+
