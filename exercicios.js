@@ -289,8 +289,8 @@ faq.appendChild(cloneH1); */
 //STR.SLICE(START, END)
 //STR.SUBSTRING
 //padStart('valor', 'numero de padding')/padEnd
-//split - transforma tudo em array
-//join
+//split - corta e transforma tudo em array
+//join - junta valores de array e retorna string
 //trim - end - start - remover esppaços em branco
 //colocar '+' na frente de string transforma em número
 //replace('x', 'y')
@@ -307,4 +307,31 @@ faq.appendChild(cloneH1); */
 // console.log(valor);
 
 //aleatorio min e max = Math.floor(Math.random() * (max - min + 1) + min)
+<<<<<<< HEAD
 //... = espread operation = dá cada item do array (vai passar por cada item), array[0], array[1], etc
+=======
+//... = espread operation = dá cada item do array (vai apssar por cada item), array[0], array[1], etc
+
+//ARRAY-------------------------------
+//[].UNSHIFT() - ADICIONA NO INICIO DA ARRAY
+//[].PUSH() - ADICIONAR NO FIM DA ARRAY
+//[].POP() - REMOVE ULTIMO ITEM DA ARRAY E RETORNA ELE - MODIFICA O ARRAY
+//[].SHIFT() - REMOVE PRIMEIRO ITEM DA ARRAY E RETORNA ELE - MODIFICA O ARRAY
+//[].REVERSER() - INVERTE A ORDEM DO ARRAY - MODIFICA O ARRAY
+//[].SPLICE(index, remover, add)
+//[].copyWithin(alvo, inicio, final)
+//[].fill() - preencher com o valor
+//[].sort()
+//NÃO MODIFICAM ARRAY - METODOS DE ACESSO -----------------------------
+//[].concat() - concatena arrays
+//[].includes(valor) - verificar se tem valor e retorna boolean
+//[].indexOf(valor) - retorna o primeiro index que achar
+//[].lastindexof(valor) - retorna o último index
+//[].slice(inicio, final) - retorna itens do inicio ao fim - usado para clonar arrays
+
+//ARRAY E ITEERAÇÃO-------------------------------
+//[].FOREACH(CALLBACK(ITEM,INDEX,ARRAY))
+//[].MAP - MESMO QUE O FOREACH, RETONAR ARRAY E NAO UNDEFINED
+//[].REDUCE(CALLBACK(ACUMULADOR,VALORATUAL,INDEX,ARRAY), VALORINICIAL) - ACUMULADOR É O RETORNO DA ITERAÇÃO ANTERIOR - FUNCIONA COMO 'INCREMENTO' - se não passar valorinicial, pula o primeiro acumulador no console, mas soma do mesmo jeito, fazendo uma iteração a menos
+
+>>>>>>> f00562288934d174002b48f108f97ac01e47ba61
