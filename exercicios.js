@@ -307,4 +307,4 @@ faq.appendChild(cloneH1); */
 // console.log(valor);
 
 //aleatorio min e max = Math.floor(Math.random() * (max - min + 1) + min)
-//... = espread operation = dá cada item do array (vai apssar por cada item), array[0], array[1], etc
+//... = espread operation = dá cada item do array (vai passar por cada item), array[0], array[1], etc
