@@ -307,9 +307,6 @@ faq.appendChild(cloneH1); */
 // console.log(valor);
 
 //aleatorio min e max = Math.floor(Math.random() * (max - min + 1) + min)
-<<<<<<< HEAD
-//... = espread operation = dá cada item do array (vai passar por cada item), array[0], array[1], etc
-=======
 //... = espread operation = dá cada item do array (vai apssar por cada item), array[0], array[1], etc
 
 //ARRAY-------------------------------
@@ -333,5 +330,5 @@ faq.appendChild(cloneH1); */
 //[].FOREACH(CALLBACK(ITEM,INDEX,ARRAY))
 //[].MAP - MESMO QUE O FOREACH, RETONAR ARRAY E NAO UNDEFINED
 //[].REDUCE(CALLBACK(ACUMULADOR,VALORATUAL,INDEX,ARRAY), VALORINICIAL) - ACUMULADOR É O RETORNO DA ITERAÇÃO ANTERIOR - FUNCIONA COMO 'INCREMENTO' - se não passar valorinicial, pula o primeiro acumulador no console, mas soma do mesmo jeito, fazendo uma iteração a menos
-
->>>>>>> f00562288934d174002b48f108f97ac01e47ba61
+//[].REDUCE(CALLBACK(ACUMULADOR,VALORATUAL,INDEX,ARRAY), VALORINICIAL) - LÊ ARRAY DA DIREITA PARA ESQUERDA
+//[].SOME - RETURN TRUE SE PELO MENOS 1 RETURN FOR TRUE
