@@ -347,3 +347,7 @@ faq.appendChild(cloneH1); */
 
 //OBJETOS---------------
 //OBJECT.CREATE(OBJETO, PROPRIEDADES)
+//CONT TESTE = {}
+//OBJECT.assign(alvo, obj1, obj2) - irá modificar o objeto alvo
+//OBJECT.defineProperties(alvo, propriedades) - adiciona ao alvo novas propriedades - define propriedades de um objeto imutáveis - há get e set
+
