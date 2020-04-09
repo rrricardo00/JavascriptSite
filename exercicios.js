@@ -344,10 +344,23 @@ faq.appendChild(cloneH1); */
 //.APLLY(THIS, [ARG1, ARG2,......]) - MESMO DO CALL, ARGUMENTOS DA FUNÇÃO SÃO PASSADOS ATRAVEÉS DE UM ARRAY, PODE PASSAR NULL PARA O THIS
 //.BIND(this, arg1, arg 2) - NÃO EXECUTA A FUNÇÃO, RETORNA A MESMA COM NOVO CONTEXTO DO THIS, TERÁ QUE ATIVAR A FUNÇÃO DEPOIS. THIS COMO NULL RETORNA window
 
-
+//TUDO É OBJETO
 //OBJETOS---------------
 //OBJECT.CREATE(OBJETO, PROPRIEDADES)
 //CONT TESTE = {}
 //OBJECT.assign(alvo, obj1, obj2) - irá modificar o objeto alvo
 //OBJECT.defineProperties(alvo, propriedades) - adiciona ao alvo novas propriedades - define propriedades de um objeto imutáveis - há get e set
-
+//Object.getOwnPropertDescriptors(obj, 'tbm uma propriedade unica') - lista todos os métodos e propriedades
+//Object.key(obj)
+//Object.values(obj)
+//Object.entries(obj) - retorna as chves e os valores
+//Object.getPrototypeOf(obj)
+//Object.is(object1, object2) compara se são iguais
+//Object.freeze() - impede mudança nas mpropriedades
+//Object.seal() - previne add de novass propriedades e impede que atuais sejam deletadas
+//Object.preventExtensions() - previne add de novas propriedades
+//{}.constructor - retorna função construtora do objeto
+//{}.hasOwnProperty('propriedade')
+//{}.propertyIsEnumerable('propriedade')
+//{}.isPrototypeOf(valor) - verifica se é o protótipo do valor passado
+//{}.toString() - object.prototype.toString.call(objeto(ou this)); -> qual o tipo de objeto
