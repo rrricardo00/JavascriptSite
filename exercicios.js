@@ -326,7 +326,7 @@ faq.appendChild(cloneH1); */
 //[].lastindexof(valor) - retorna o último index
 //[].slice(inicio, final) - retorna itens do inicio ao fim - usado para clonar arrays
 
-//ARRAY E ITEERAÇÃO-------------------------------
+//ARRAY E ITERAÇÃO-------------------------------
 //[].FOREACH(CALLBACK(ITEM,INDEX,ARRAY))
 //[].MAP - MESMO QUE O FOREACH, RETONAR ARRAY E NAO UNDEFINED
 //[].REDUCE(CALLBACK(ACUMULADOR,VALORATUAL,INDEX,ARRAY), VALORINICIAL) - ACUMULADOR É O RETORNO DA ITERAÇÃO ANTERIOR - FUNCIONA COMO 'INCREMENTO' - se não passar valorinicial, pula o primeiro acumulador no console, mas soma do mesmo jeito, fazendo uma iteração a menos
@@ -349,7 +349,7 @@ faq.appendChild(cloneH1); */
 //OBJECT.CREATE(OBJETO, PROPRIEDADES)
 //CONT TESTE = {}
 //OBJECT.assign(alvo, obj1, obj2) - irá modificar o objeto alvo
-//OBJECT.defineProperties(alvo, propriedades) - adiciona ao alvo novas propriedades - define propriedades de um objeto imutáveis - há get e set
+//OBJECT.defineProperties(alvo, propriedades) - adiciona ao alvo novas propriedades - define propriedades de um objeto que serão imutáveis - há get e set
 //Object.getOwnPropertDescriptors(obj, 'tbm uma propriedade unica') - lista todos os métodos e propriedades
 //Object.key(obj)
 //Object.values(obj)
