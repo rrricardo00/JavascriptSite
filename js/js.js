@@ -1,9 +1,9 @@
-const tabMenu = document.querySelectorAll('.js-tabmenu li');
-const tabContent = document.querySelectorAll('.js-tabcontent section');
+const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+const tabContent = document.querySelectorAll('[data-tab="content"] section');
 
 function initTabNav() {
-    const tabMenu = document.querySelectorAll('.js-tabmenu li');
-    const tabContent = document.querySelectorAll('.js-tabcontent section');
+    const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+    const tabContent = document.querySelectorAll('[data-tab="content"] section');
 
     if (tabMenu.length && tabContent.length) {
         tabContent[0].classList.add('ativo');
@@ -12,7 +12,8 @@ function initTabNav() {
             tabContent.forEach((element) => {
                 element.classList.remove('ativo');
             });
-            tabContent[index].classList.add('ativo')
+            const direcao = tabContent[index].dataset.anime;
+            tabContent[index].classList.add('ativo', direcao)
         }
 
         tabMenu.forEach((itemMenu, index) => {
@@ -25,7 +26,7 @@ function initTabNav() {
 }
 
 function initAccordion() {
-    const accordionList = document.querySelectorAll('.js-accordion dt');
+    const accordionList = document.querySelectorAll('[data-anime="accordion"] dt');
     const activeClass = 'ativo';
     if (accordionList.length) {
         accordionList[0].classList.add(activeClass);
@@ -45,7 +46,7 @@ function initAccordion() {
 }
 
 function initScrollSuave() {
-    const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+    const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
 
     function scrollToSection(event) {
         event.preventDefault();
@@ -73,7 +74,7 @@ function initScrollSuave() {
 }
 
 function scrollAnimado() {
-    const section = document.querySelectorAll('.js-scroll');
+    const section = document.querySelectorAll('[data-anime="scroll"]');
     const windowMetade = window.innerHeight * 0.6;
     section[0].classList.add('ativo');
 

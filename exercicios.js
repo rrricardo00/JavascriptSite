@@ -364,3 +364,13 @@ faq.appendChild(cloneH1); */
 //{}.propertyIsEnumerable('propriedade')
 //{}.isPrototypeOf(valor) - verifica se é o protótipo do valor passado
 //{}.toString() - object.prototype.toString.call(objeto(ou this)); -> qual o tipo de objeto
+
+//DATASET----------------------------------
+// A propriedade HTMLElement.dataset permite o acesso, em modo de leitura e escrita, a todos os atributos de dados personalizado (data-*) no elemento. Ele é um mapa de DOMString, com uma entrada para cada atributo de dados personalizado.
+// O nome de um atributo de dados customizado inicia com data-. Ele deve conter somente letras, números e os seguintes caracteres: dash (-), dot (.), collon(:), underscore (_). Além disso, ele não deve conter letras ASCII captalizadas (A à Z)
+
+//MODULES-----------------------------------
+//nativo do es6
+//manunteção
+//compartilhamento
+//
