@@ -1,6 +1,3 @@
-const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
-const tabContent = document.querySelectorAll('[data-tab="content"] section');
-
 function initTabNav() {
     const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
     const tabContent = document.querySelectorAll('[data-tab="content"] section');
@@ -45,33 +42,6 @@ function initAccordion() {
 
 }
 
-function initScrollSuave() {
-    const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
-
-    function scrollToSection(event) {
-        event.preventDefault();
-        const href = event.currentTarget.getAttribute('href');
-        const section = document.querySelector(href);
-
-        section.scrollIntoView({
-
-            behavior: 'smooth',
-            block: 'start',
-
-        });
-
-        // const topo = section.offsetTop;
-        // window.scrollTo({
-        //     top: topo,
-        //     behavior: "smooth"
-        // });
-    }
-
-
-    linksInternos.forEach((element) => {
-        element.addEventListener('click', scrollToSection);
-    });
-}
 
 function scrollAnimado() {
     const section = document.querySelectorAll('[data-anime="scroll"]');
@@ -100,5 +70,5 @@ function scrollAnimado() {
 
 initTabNav();
 initAccordion();
-initScrollSuave();
+
 scrollAnimado();

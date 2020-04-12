@@ -373,4 +373,17 @@ faq.appendChild(cloneH1); */
 //nativo do es6
 //manunteção
 //compartilhamento
-//
+//export default apenas para 1 exportação de dentro do módulo
+//import * as teste from '/path' - importa todas as funções de un módulo. Usar caso não saiba o nome das funções
+
+//NAMED EXPORTS - Em módulos ao Exportar mais de um valor, usar {a,b,c} para especificar cada valor, nome importado deve ser igual ao exportado 
+//export funtion a() {}
+//export funtion b() {}
+//import {a, b} from 'path.js';
+//a();
+//b();
+
+
+
+
+
