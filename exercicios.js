@@ -374,7 +374,7 @@ faq.appendChild(cloneH1); */
 //manunteção
 //compartilhamento
 //export default apenas para 1 exportação de dentro do módulo
-//import * as teste from '/path' - importa todas as funções de un módulo. Usar caso não saiba o nome das funções
+//import * as teste from '/path' - importa todas as funções de un módulo. Usar caso não saiba o nome das funções (ou qualuqer outra coisa) - tudo pode ser exportado
 
 //NAMED EXPORTS - Em módulos ao Exportar mais de um valor, usar {a,b,c} para especificar cada valor, nome importado deve ser igual ao exportado 
 //export funtion a() {}
@@ -382,6 +382,7 @@ faq.appendChild(cloneH1); */
 //import {a, b} from 'path.js';
 //a();
 //b();
+//'use strict' - por padrão, modules estão no modo 'use strict'
 
 
 
