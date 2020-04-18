@@ -397,5 +397,5 @@ faq.appendChild(cloneH1); */
 //this - no setTimeout sempre será o window, tem q usar arrow fucntion, pois usa o contexto de this do objeto pai e não do objeto master (que seria window.setTimeout)
 //SETINTERVAL()-------------------------------
 //setInterval(callback, tempo, arg1, arg2,...) - ativa callback toda vez que a quantidade de tempo passar
-//
+//clearInterval(var) - para o serinterval, precisa colcoar setInterval em uma variável
 
