@@ -384,7 +384,18 @@ faq.appendChild(cloneH1); */
 //b();
 //'use strict' - por padrão, modules estão no modo 'use strict'
 
-
-
-
+//SETTIMEOUT-------------------------------------
+//setTimeout(callback, tempo, arg1, arg2, ...) - metodo assíncrono que ativa o callback após tempo
+//se não passar tempo, entra na fila de callstak imediamtamente.
+//Loop com setTimeout------------------------------
+// for (let index = 0; index < 20; index++) {
+//     setTimeout(() => {
+//         console.log(index)
+//     }, 1000*index);
+// }
+//------------------------------------------------------
+//this - no setTimeout sempre será o window, tem q usar arrow fucntion, pois usa o contexto de this do objeto pai e não do objeto master (que seria window.setTimeout)
+//SETINTERVAL()-------------------------------
+//setInterval(callback, tempo, arg1, arg2,...) - ativa callback toda vez que a quantidade de tempo passar
+//
 
