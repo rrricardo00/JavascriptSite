@@ -5,6 +5,7 @@ import initTabNav from './modules/Tab.js';
 import modal from './modules/modal.js';
 import initToolTip from './modules/tooltip.js';
 import dropDownMenu from './modules/dropDownMenu.js';
+import menuMobile from './modules/menuMobile.js'
 
 
 initTabNav();
@@ -14,3 +15,4 @@ initAccordion();
 modal();
 initToolTip();
 dropDownMenu();
+menuMobile();
