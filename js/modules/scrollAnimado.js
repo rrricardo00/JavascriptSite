@@ -10,7 +10,7 @@ export default function scrollAnimado() {
                 const sectionTop = element.getBoundingClientRect().top - windowMetade;
                 if (sectionTop < 0) {
                     element.classList.add('ativo');
-                } else {
+                } else if(element.classList.contains('ativo')) {
                     element.classList.remove('ativo');
                 }
             });

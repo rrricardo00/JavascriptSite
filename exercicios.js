@@ -399,3 +399,15 @@ faq.appendChild(cloneH1); */
 //setInterval(callback, tempo, arg1, arg2,...) - ativa callback toda vez que a quantidade de tempo passar
 //clearInterval(var) - para o serinterval, precisa colcoar setInterval em uma variável
 
+//DATE---------------------------------------------------
+//const agora = new Date()
+//gettime() - mostar o tempo toal em milisegundos desde 1 de janeiro de 1970
+
+//FORMS------------------------------------------------
+//formulários
+//document.forms
+//document.forms.contato - form com nome contato
+//document.forms[0].elements[0].value - valor do primeiro
+//values - retorna o valor do elemento no formulário
+//evento 'keyup' - para ficar de olho no evento e puxar o valor sempre que ele mudar. (vai digitando e vai pegando o valor)
+//evento 'change' dispara quando houver mudanças  (ativa o change quando muda o campo)

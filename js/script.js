@@ -6,6 +6,8 @@ import modal from './modules/modal.js';
 import initToolTip from './modules/tooltip.js';
 import dropDownMenu from './modules/dropDownMenu.js';
 import menuMobile from './modules/menuMobile.js'
+import numeros from './modules/numeros.js';
+import funcionamento from './modules/funcionamento.js';
 
 
 initTabNav();
@@ -16,3 +18,5 @@ modal();
 initToolTip();
 dropDownMenu();
 menuMobile();
+numeros();
+funcionamento();
