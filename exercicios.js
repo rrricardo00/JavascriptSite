@@ -409,5 +409,11 @@ faq.appendChild(cloneH1); */
 //document.forms.contato - form com nome contato
 //document.forms[0].elements[0].value - valor do primeiro
 //values - retorna o valor do elemento no formulário
-//evento 'keyup' - para ficar de olho no evento e puxar o valor sempre que ele mudar. (vai digitando e vai pegando o valor)
+//evento 'keyup' - para ficar de olho no evento e puxar o valor sempre que ele mudar. (vai digitando e vai pegando o valor) - nao pega voz
 //evento 'change' dispara quando houver mudanças  (ativa o change quando muda o campo)
+
+//VALIDAÇÃO FORMS--------------------------------------------
+//checkValidity - verifica se input com required é válido
+//validationMessage possui a mensagem padrão de erro do browser
+//setCustomValidity('') - usado pra modificar a mensagem padrão de erro do browser
+
