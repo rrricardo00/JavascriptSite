@@ -54,7 +54,7 @@
         <span class="erro"></span>
         <label for="mensagem">Mensagem</label>
         <textarea name="mensagem" id="mensagem"></textarea>
-        <select name="cores" id="cores">
+        <!-- <select name="cores" id="cores">
             <option value="">Selecione a cor de background</option>
             <option value="blue">Blue</option>
             <option value="red">Red</option>
@@ -66,20 +66,35 @@
         <input type="number">
         <input type="range">
         <input type="password">
+        <label for="identidade">Possui Identidade?<input type="checkbox" id="identidade" name="identidade"
+                value="identidade"></label> -->
     </form>
 
     <span class="texto"></span>
     <script>
         const contato = document.forms.contato;
         const texto = document.querySelector('.texto');
-        
+        // contato.addEventListener('change', handleKeyUp);
+        contato.addEventListener('change', handleChange);
+        const dados = {};
 
-        function handleKeyUp(event) {
-            document.body.style.background = contato.cores.value;
-            console.log(event.target.value);
+        function handleChange() {
+            //Adicionar vários valores dentro de um objeto -> usar [];
+            dados[event.target.name] = event.target.value;
         }
 
-        contato.addEventListener('change', handleKeyUp);
+        
+        // function handleKeyUp(event) {
+
+        //     if (event.target.checked) {
+        //         console.log(event.target.value);
+        //     }
+        //     // console.log(event.target.value);
+        //     document.body.style.background = contato.cores.value;
+
+        // }
+
+
 
 //--------------------------------------------------------------------------------------------------------
 
