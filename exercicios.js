@@ -417,3 +417,7 @@ faq.appendChild(cloneH1); */
 //validationMessage possui a mensagem padrão de erro do browser
 //setCustomValidity('') - usado pra modificar a mensagem padrão de erro do browser
 
+//SÍNCRONO E ASSÍNCRONO
+// SÍNCRONO - Espera tarefa acabar para passar para a próxima
+// ASSÍNCRONOMove para a próxima tarefa antes da anterior terminar. Trabalho será executado no 'fundo' e quanto terminado, será colocado na fila (task queue)
+//Ex: setTimeout, Ajax, Promises, Fetch, Async
