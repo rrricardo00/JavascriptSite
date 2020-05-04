@@ -421,3 +421,13 @@ faq.appendChild(cloneH1); */
 // SÍNCRONO - Espera tarefa acabar para passar para a próxima
 // ASSÍNCRONOMove para a próxima tarefa antes da anterior terminar. Trabalho será executado no 'fundo' e quanto terminado, será colocado na fila (task queue)
 //Ex: setTimeout, Ajax, Promises, Fetch, Async
+
+//PROMISES-----------------------------------------------
+//função construtora de promessas. 
+//EXEMPLO:
+// const promesa = new Promise(function(resolver, rejeitar){
+// resolver();
+// rejeitar();
+// });
+
+
