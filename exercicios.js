@@ -426,8 +426,14 @@ faq.appendChild(cloneH1); */
 //função construtora de promessas. 
 //EXEMPLO:
 // const promesa = new Promise(function(resolver, rejeitar){
-// resolver();
+// resolver('deu certo');
 // rejeitar();
 // });
+//FIM EXEMPLO
+//Promises possuem o método then() - só será atuvado quando a promise for resolvida. O argumento da callback será o valor passado na função resolve
+//promesa.then(function (resolucao){
+// console.log(resolucao); -----------> vai imprimir o log 'deu certo'
+// });
+
 
 
