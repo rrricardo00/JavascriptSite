@@ -397,7 +397,7 @@ faq.appendChild(cloneH1); */
 //this - no setTimeout sempre será o window, tem q usar arrow fucntion, pois usa o contexto de this do objeto pai e não do objeto master (que seria window.setTimeout)
 //SETINTERVAL()-------------------------------
 //setInterval(callback, tempo, arg1, arg2,...) - ativa callback toda vez que a quantidade de tempo passar
-//clearInterval(var) - para o serinterval, precisa colcoar setInterval em uma variável
+//clearInterval(var) - para o serinterval, precisa colocar  setInterval em uma variável
 
 //DATE---------------------------------------------------
 //const agora = new Date()
@@ -419,7 +419,7 @@ faq.appendChild(cloneH1); */
 
 //SÍNCRONO E ASSÍNCRONO
 // SÍNCRONO - Espera tarefa acabar para passar para a próxima
-// ASSÍNCRONOMove para a próxima tarefa antes da anterior terminar. Trabalho será executado no 'fundo' e quanto terminado, será colocado na fila (task queue)
+// ASSÍNCRONO - Move para a próxima tarefa antes da anterior terminar. Trabalho será executado no 'fundo' e quanto terminado, será colocado na fila (task queue)
 //Ex: setTimeout, Ajax, Promises, Fetch, Async
 
 //PROMISES-----------------------------------------------

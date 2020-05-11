@@ -1,15 +1,31 @@
-const promesa = new Promise(function (resolve, reject) {
+const promesa = new Promise((resolve, reject) => {
+    let condicao = false;
+    if (condicao) {
+        setTimeout(() => {
+            resolve({ nome: "Ricardo", idade: 29 });
+        }, 1000);
+    }
+    else {
+        reject(Error('Um erro ocorreu'));
+    }
 
-    let condicao = true;
-
-    if (condicao)
-        resolve('Deu certo');
-    else
-        reject(Error('Deu erro'));
 
 });
 
 
-promesa.then(function (resolve) {
+const retorno = promesa.then(resolve => {
+
     console.log(resolve);
+    resolve.profissao = 'programador';
+    return resolve;
+
+}).then(resolve => {
+    console.log(resolve);
+
+}, rejeitada => {     //Ou usar .catch      
+    console.log(rejeitada);
 });
+
+
+console.log('teste');
+console.log(retorno);
