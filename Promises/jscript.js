@@ -25,7 +25,7 @@ const retorno = promesa.then(resolve => {
 }, rejeitada => {     //Ou usar .catch      
     console.log(rejeitada);
 }).finally(()=>{
-
+    console.log('acabou');
 });
 
 
