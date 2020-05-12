@@ -424,6 +424,9 @@ faq.appendChild(cloneH1); */
 
 //PROMISES-----------------------------------------------
 //função construtora de promessas. 
+//then() - utilizado para continuar quando algo dá certo, podendo cascatear
+//catch() - para retornar um erro
+//finally() - executará a função anônima assim que a promessa acabar - executa se independente se resultado for rejeitado ou não
 //EXEMPLO:
 // const promesa = new Promise(function(resolver, rejeitar){
 // resolver('deu certo');
@@ -434,6 +437,7 @@ faq.appendChild(cloneH1); */
 //promesa.then(function (resolucao){
 // console.log(resolucao); -----------> vai imprimir o log 'deu certo'
 // });
+
 
 
 
