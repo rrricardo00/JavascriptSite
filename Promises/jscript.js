@@ -9,9 +9,7 @@ const promesa = new Promise((resolve, reject) => {
         reject(Error('Um erro ocorreu'));
     }
 
-
 });
-
 
 const retorno = promesa.then(resolve => {
 
@@ -27,7 +25,5 @@ const retorno = promesa.then(resolve => {
 }).finally(()=>{
     console.log('acabou');
 });
-
-
 
 console.log(retorno);
