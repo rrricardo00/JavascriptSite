@@ -44,4 +44,9 @@ const dados = new Promise((resolve)=>{
 const carregouTudo = Promise.all([login, dados]);
 carregouTudo.then(resolve =>{
 console.log(resolve);
-})
+});
+
+// const carregouTudo = Promise.race([login, dados]);
+// carregouTudo.then(resolve =>{
+// console.log(resolve);
+// });
