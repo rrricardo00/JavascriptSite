@@ -427,7 +427,8 @@ faq.appendChild(cloneH1); */
 //then() - utilizado para continuar quando algo dá certo, podendo cascatear
 //catch() - para retornar um erro
 //finally() - executará a função anônima assim que a promessa acabar - executa se independente se resultado for rejeitado ou não
-//Promise.all(); - Retornará uma nova promise assim que todas as promises dentro dela foram resolvidas ou pelo menos uma rejeitada. Retorna uma array com as respostas de cada Promise
+//Promise.all([valores]); - Retornará uma nova promise assim que todas as promises dentro dela foram resolvidas ou pelo menos uma rejeitada. Retorna uma array com as respostas de cada Promise - espera o tempo da última promise resolver
+//Promise.race([valore]) - parecido com Promise.All() - diferença que a pimeira promise resolvida, vai resolver a promise do race.
 //Promises possuem o método then() - só será atuvado quando a promise for resolvida. O argumento da callback será o valor passado na função resolve
 //promesa.then(function (resolucao){
 // console.log(resolucao); -----------> vai imprimir o log 'deu certo'

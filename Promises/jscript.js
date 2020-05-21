@@ -41,10 +41,7 @@ const dados = new Promise((resolve)=>{
     }, 1500);
 });
 
-const retorno_login = login.then(resolve =>{
-    console.log(resolve);
-})
-
-const retorno_dados = dados.then(resolve =>{
-    console.log(resolve);
+const carregouTudo = Promise.all([login, dados]);
+carregouTudo.then(resolve =>{
+console.log(resolve);
 })
