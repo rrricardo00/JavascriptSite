@@ -1,13 +1,14 @@
-const doc = fetch('./doc.txt');
+const cep = fetch('https://viacep.com.br/ws/01001000/json/');
 
-doc.then(resolucao => {
-    return resolucao.text();
+cep.then(resolucao => {
+    return resolucao.json();
 })
     .then(body => {
+        
         const elemento = document.createElement('div');
-        elemento.classList.add('classe')
-        elemento.innerText = body;
-        document.body.appendChild(elemento)
+        elemento.classList.add('classe');
+        elemento.innerText = body.logradouro;
+        document.body.appendChild(elemento);
+        
        
-
     })
