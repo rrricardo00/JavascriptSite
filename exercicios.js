@@ -403,6 +403,25 @@ faq.appendChild(cloneH1); */
 //const agora = new Date()
 //gettime() - mostar o tempo toal em milisegundos desde 1 de janeiro de 1970
 
+
+//AULA  timeStamp
+//------------------------------------------------------------
+// const agora = new Date();
+// const futuro = new Date('Dec 17 2020')
+// console.log(agora.getMonth())
+// console.log(futuro)
+
+
+// function transformar(tempo) {
+//     return Math.floor(tempo / (24 * 60 * 60 * 1000));
+// }
+
+// const a = agora.getTime()
+// const b = futuro.getTime()
+// const c= b-a;
+// console.log(transformar(c))
+//------------------------------------------------------------
+
 //FORMS------------------------------------------------
 //formulários
 //document.forms
@@ -443,7 +462,8 @@ FIM EXEMPLO
 
 //FETCH API
 //PERMITE FAZER REQUISIÇÕES HTTP ATRAVÉS DO MÉTODO FETCH() - SEMPRE VAI RETORNAR UM RESPONSE
-//
+//.text() - retorna o conteúdo - podem ser utilziados vários formatos
+//.josn() - retorna o json 
 
 
 

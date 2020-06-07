@@ -1,14 +1,16 @@
-const cep = fetch('https://viacep.com.br/ws/01001000/json/');
+// const cep = fetch('https://viacep.com.br/ws/01001000/json/');
+
+const cep = fetch('./estilos.css');
 
 cep.then(resolucao => {
-    return resolucao.json();
+    return resolucao.text();
 })
     .then(body => {
-        
-        const elemento = document.createElement('div');
-        elemento.classList.add('classe');
-        elemento.innerText = body.logradouro;
-        document.body.appendChild(elemento);
-        
-       
+
+        const conteudo = document.querySelector('.conteudo');
+        const style = document.createElement('style');
+        style.innerHTML = body;
+        conteudo.innerText = body;
+        conteudo.appendChild(style);
+
     })

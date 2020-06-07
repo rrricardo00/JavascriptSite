@@ -16,24 +16,11 @@ export default function funcionamento() {
 }
 
 
-
-
 // console.log(semanaAberta)
 // console.log(diaSemana)
 // console.log(horarioSemana)
 // console.log(diaAgora)
 // console.log(horarioAgora)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
