@@ -12,5 +12,5 @@ cep.then(resolucao => {
         style.innerHTML = body;
         conteudo.innerText = body;
         conteudo.appendChild(style);
-
+        
     })
