@@ -462,8 +462,8 @@ FIM EXEMPLO
 
 //FETCH API
 //PERMITE FAZER REQUISIÇÕES HTTP ATRAVÉS DO MÉTODO FETCH() - SEMPRE VAI RETORNAR UM RESPONSE
-//.text() - retorna o conteúdo - podem ser utilziados vários formatos
+//.text() - retorna o conteúdo - podem ser utilziados vários formatos, pegar html e trasnformar em texto
 //.josn() - retorna o json 
-
+//pegar html de uma pagina trabahlar ela em outra página
 
 
