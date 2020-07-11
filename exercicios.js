@@ -463,7 +463,9 @@ FIM EXEMPLO
 //FETCH API
 //PERMITE FAZER REQUISIÇÕES HTTP ATRAVÉS DO MÉTODO FETCH() - SEMPRE VAI RETORNAR UM RESPONSE
 //.text() - retorna o conteúdo - podem ser utilziados vários formatos, pegar html e trasnformar em texto
-//.josn() - retorna o json 
+//.jons() - retorna o json 
+//.blob() - tipo de objeto utilizado para representação de dados de um arquivo
+//.clone() - transformar uma resposta em diferentes valores e não modificar sempre o mesmo
 //pegar html de uma pagina trabahlar ela em outra página
 
 
