@@ -467,5 +467,7 @@ FIM EXEMPLO
 //.blob() - tipo de objeto utilizado para representação de dados de um arquivo
 //.clone() - transformar uma resposta em diferentes valores e não modificar sempre o mesmo
 //pegar html de uma pagina trabahlar ela em outra página
-
+//.status e .ok - retorna o status da requisição = 200, 404, 300, 202, etc 
+//.url - retorna a url da requisição
+//.type - retorna o tipo da resposta (basic - requisição dentro do próprio servidor)
 
