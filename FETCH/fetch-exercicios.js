@@ -39,12 +39,24 @@ function fetchBtc() {
 fetchBtc();
 // setInterval(()=>fetchBtc(), 30000);
 
-function piada() {
-  // fetch('https://api.chucknorris.io/jokes/random').then(response => response.json()).then(response => console.log(response.value))
+
+// PIADA------------------------------------------------------------------------------------------
+
+const proxima = document.querySelector('.proxima');
+const mostrarPiada = document.querySelector('.piada');
+
+proxima.addEventListener('click', proximaPiada);
+
+function proximaPiada(e){
+  e.preventDefault();
+  piada();
 }
 
+function piada() {
+  fetch('https://api.chucknorris.io/jokes/random').then(response => response.json()).then(response => mostrarPiada.innerText = response.value);
+  
+}
 
-piada();
 
 // CORONA---------------------------------------------------------------------------------------
 
@@ -66,8 +78,6 @@ function corona() {
         cors.appendChild(novo);
         const stringNova = novo.innerText.split('tem').join('<br/>');
         novo.innerHTML = stringNova;
-
-
 
       }
 

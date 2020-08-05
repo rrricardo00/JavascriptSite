@@ -16,7 +16,7 @@ console.log(ultimo[ultimo.length - 1]); */
 //------------------ARROW FUNCTION------------------------------
 
 /* const imgs = document.querySelectorAll('img'); */
-/* 
+/*
 imgs.forEach(function(element, index, array) {
     console.log(element, index, array);
 
@@ -39,7 +39,7 @@ paragrafos.forEach(element => {
 /* const menu = document.querySelector('.menu'); */
 
 /* menu.classList; */
-/* 
+/*
 const h2 = document.querySelector('h2');
 const pegar = h2.getBoundingClientRect();
 
@@ -470,4 +470,29 @@ FIM EXEMPLO
 //.status e .ok - retorna o status da requisição = 200, 404, 300, 202, etc 
 //.url - retorna a url da requisição
 //.type - retorna o tipo da resposta (basic - requisição dentro do próprio servidor)
+
+//JSON-----------------------------------------------------------------------
+//aspas duplas - obrigatórias
+//organizador de dados
+//composto por chave e valor
+//interpretado em diferentes linguagens
+// JSON.parse() - transforma texto json em um objeto javascript
+// JSON.stringify() - transforma objeto json em uma string json
+
+
+//API-----------------------------------------------------------------------
+// Headers
+// Cache - Control
+// Tempo que o arquivo deve ficar em cache em segundos.Ex: public, max - age=3600
+// Content - Type
+// Tipo de conteúdo.Ex: text / html; charset = utf - 8. Indicar o tipo de arquivo principalmente em métodos POST e PUT.
+// Lista de Headers
+
+
+//METHODS
+// GET - Puxa informação, utilizado para pegar posts, usuários e etc.
+// POST - Utilizado para criar posts, usuários e etc.
+// PUT - Geralmente utilizado para atualizar informações.
+// DELETE - Deleta uma informação.
+// HEAD - Puxa apenas os headers.
 
