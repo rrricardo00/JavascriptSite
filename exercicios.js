@@ -496,3 +496,15 @@ FIM EXEMPLO
 // DELETE - Deleta uma informação.
 // HEAD - Puxa apenas os headers.
 
+//HEADERS
+//cache-control
+//content-type
+//etc... (ver mozilla headers)
+
+//CORS
+//gerencia como deve ser o compartilhamento de recursos entre diferente origens.
+//Se o servidor não permitir o acesso, este será bloqueado. É possível passar por cima do bloqueio utilizando um proxy.
+
+//ASYNC / AWAIT-----------------------------------------------------------------
+// função possui partes assíncronas e que você pretende esperar a resolução da mesma antes de continuar. O await irá indicar a promise que devemos esperar.
+//await só vai na parte que retornam promesas, ex: await fetch('url');
