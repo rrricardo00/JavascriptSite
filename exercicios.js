@@ -508,3 +508,5 @@ FIM EXEMPLO
 //ASYNC / AWAIT-----------------------------------------------------------------
 // função possui partes assíncronas e que você pretende esperar a resolução da mesma antes de continuar. O await irá indicar a promise que devemos esperar.
 //await só vai na parte que retornam promesas, ex: await fetch('url');
+//O resultado da expressão à frente de await tem que ser uma promise. 
+//try / catch
