@@ -510,3 +510,8 @@ FIM EXEMPLO
 //await só vai na parte que retornam promesas, ex: await fetch('url');
 //O resultado da expressão à frente de await tem que ser uma promise. 
 //try / catch
+
+//HISTORY API
+//window.history
+//window.history.back()
+//window.history.forward()
