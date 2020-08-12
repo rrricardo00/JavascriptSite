@@ -68,7 +68,7 @@ imagem.then(response => {
 
   console.log(response.status);
   // response.headers.forEach(console.log);
-  if
+
 
 });
 

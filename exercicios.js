@@ -506,7 +506,7 @@ FIM EXEMPLO
 //Se o servidor não permitir o acesso, este será bloqueado. É possível passar por cima do bloqueio utilizando um proxy.
 
 //ASYNC / AWAIT-----------------------------------------------------------------
-// função possui partes assíncronas e que você pretende esperar a resolução da mesma antes de continuar. O await irá indicar a promise que devemos esperar.
+//função possui partes assíncronas e que você pretende esperar a resolução da mesma antes de continuar. O await irá indicar a promise que devemos esperar.
 //await só vai na parte que retornam promesas, ex: await fetch('url');
 //O resultado da expressão à frente de await tem que ser uma promise. 
 //try / catch
@@ -515,3 +515,5 @@ FIM EXEMPLO
 //window.history
 //window.history.back()
 //window.history.forward()
+//window.history.pushState(null, null, string) - será mais usado com fetch
+//popstate - eventListener, executa função quando clicar no botão "voltar" ou "próximo", só ativa quando tiver um pushState 
