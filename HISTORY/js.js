@@ -12,6 +12,7 @@ links.forEach(link => {
 });
 
 async function fetchPage(url) {
+    document.querySelector('.content').innerText = "Carregando";
     const pageResponse = await fetch(url);
     const pagetext = await pageResponse.text();
     replaceContent(pagetext);
@@ -52,9 +53,15 @@ function pegarPokemon(event) {
 }
 
 async function pokemon(index) {
-    const pegar = await fetch("https://pokeapi.co/api/v2/pokemon");
-    const mostrar = await pegar.json();
-    mostrarPokemon.innerText = mostrar.results[+index-1].name;
+    document.querySelector('.mostrarPokemon').innerText = "carregando";
+    if (index) {
+        const pegar = await fetch("https://pokeapi.co/api/v2/pokemon");
+        const mostrar = await pegar.json();
+        mostrarPokemon.innerText = mostrar.results[+index - 1].name;
+    } else {
+        mostrarPokemon.innerText = "Digite um resultado"
+    }
+
 
 }
 
