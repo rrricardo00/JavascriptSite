@@ -517,3 +517,11 @@ FIM EXEMPLO
 //window.history.forward()
 //window.history.pushState(null, null, string) - será mais usado com fetch
 //popstate - eventListener, executa função quando clicar no botão "voltar" ou "próximo", só ativa quando tiver um pushState 
+
+//CLASSE
+//FUNCAO CONSTRUTORA = CRIAR OBEJTOS, function classe(item1, item2){this.item1 = "x"; this.item2 = "y"} - new classe("ex1", "ex2");
+//class
+//syntactical sugar - usa sistema de protótipos de uma funcao construtuora para criar a classe
+//static - diferente de prototype, nao precisara criar um novo objeto, podera acessar a funcao direta. exemplo: const botao = botao.funcaoEstatica();
+//static - nao tem como acessar por protoipo, tem que acessar direto
+//static - mais utilizado para retornar criação de um objeto com valores já predefinidos: return new Button('ex1', 'ex2')

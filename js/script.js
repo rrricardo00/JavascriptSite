@@ -8,7 +8,7 @@ import dropDownMenu from './modules/dropDownMenu.js';
 import menuMobile from './modules/menuMobile.js'
 import funcionamento from './modules/funcionamento.js';
 import fetchAnimais from './modules/fetchanimais.js';
-
+import btc from './modules/btc.js';
 
 initTabNav();
 initScrollSuave();
@@ -18,6 +18,6 @@ modal();
 initToolTip();
 dropDownMenu();
 menuMobile();
-
 funcionamento();
 fetchAnimais();
+btc();

@@ -165,6 +165,7 @@ body {
             margin-right: 10px;
             background: #fb5;
         }
+     
     }
 }
 
@@ -315,4 +316,11 @@ body {
         transition: 0.3s;
         transform: translate3d(0px, 0, 0);
     }
+}
+.btc-preco{
+    padding: .2rem .5rem;
+    font-weight: bold;
+    border-radius: 2px;
+    background: #3f4;
+
 }
