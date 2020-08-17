@@ -525,3 +525,5 @@ FIM EXEMPLO
 //static - diferente de prototype, nao precisara criar um novo objeto, podera acessar a funcao direta. exemplo: const botao = botao.funcaoEstatica();
 //static - nao tem como acessar por protoipo, tem que acessar direto
 //static - mais utilizado para retornar criação de um objeto com valores já predefinidos: return new Button('ex1', 'ex2')
+//get
+//set
