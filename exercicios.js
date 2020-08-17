@@ -511,14 +511,14 @@ FIM EXEMPLO
 //O resultado da expressão à frente de await tem que ser uma promise. 
 //try / catch
 
-//HISTORY API
+//HISTORY API-----------------------------------------------------------------
 //window.history
 //window.history.back()
 //window.history.forward()
 //window.history.pushState(null, null, string) - será mais usado com fetch
 //popstate - eventListener, executa função quando clicar no botão "voltar" ou "próximo", só ativa quando tiver um pushState 
 
-//CLASSE
+//CLASSE-----------------------------------------------------------------
 //FUNCAO CONSTRUTORA = CRIAR OBEJTOS, function classe(item1, item2){this.item1 = "x"; this.item2 = "y"} - new classe("ex1", "ex2");
 //class
 //syntactical sugar - usa sistema de protótipos de uma funcao construtuora para criar a classe
@@ -527,3 +527,5 @@ FIM EXEMPLO
 //static - mais utilizado para retornar criação de um objeto com valores já predefinidos: return new Button('ex1', 'ex2')
 //get
 //set
+//subClasses - extends
+//super - usado para acessar a classe pai e acesar seus metodos e propriedades

@@ -1,20 +1,47 @@
-class Button {
-    constructor(text, color) {
-        this.text = text;
-        this.color = color;
+class Veiculo{
+ constructor(rodas){
+     this.rodas = rodas
+ }
+ acelerar(){
+     console.log('acelerou');
+ }
+}
+
+class Moto extends Veiculo{
+    constructor(rodas, capacete){
+        super(rodas);
+        this.capacete = capacete;
     }
-    get element(){
-        const type = this._elementType || 'button';
-        const buttonElemente = document.createElement(type);
-        buttonElemente.innerText = this.text;
-        buttonElemente.style.color = this.color;
-        return buttonElemente;
+    empinar(){
+        console.log('Moto empinou com '+this.rodas+' rodas');
     }
-    set element(type){
-        this._elementType = type;
+    acelerar(){
+         super.acelerar();
+        console.log('acelerou muito de moto');
     }
 }
-const blueButton = new Button('Texto Botao', 'blue');
+
+const moto = new Moto(2, true);
+moto.empinar();
+
+
+// class Button {
+//     constructor(text, color) {
+//         this.text = text;
+//         this.color = color;
+//     }
+//     get element(){
+//         const type = this._elementType || 'button';
+//         const buttonElemente = document.createElement(type);
+//         buttonElemente.innerText = this.text;
+//         buttonElemente.style.color = this.color;
+//         return buttonElemente;
+//     }
+//     set element(type){
+//         this._elementType = type;
+//     }
+// }
+// const blueButton = new Button('Texto Botao', 'blue');
 
 // const button = {
 //     get tamanho(){
