@@ -529,3 +529,7 @@ FIM EXEMPLO
 //set
 //subClasses - extends
 //super - usado para acessar a classe pai e acesar seus metodos e propriedades
+
+//FUNCTION EXPRESSION-----------------------------------------------------------------
+//delcarar função a partir de uma variável - const somar = function(a, b){return a+b}
+//codigo tem que vir apos, pois vai para dead zone antes no hoisting
