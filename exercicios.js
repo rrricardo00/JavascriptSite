@@ -533,3 +533,10 @@ FIM EXEMPLO
 //FUNCTION EXPRESSION-----------------------------------------------------------------
 //delcarar função a partir de uma variável - const somar = function(a, b){return a+b}
 //codigo tem que vir apos, pois vai para dead zone antes no hoisting
+
+//FACTORY FUNCTION-----------------------------------------------------------------
+//Não precisa do operador new
+//possibilidade de criar métodos e variáveis privados - só nao retornar o objeto
+//Ice Factory =  Object.freeze() - evita que o usuário sobrescreva o retorno do objeto
+//Ice Factoty - se for em módulos, usar 'use strict'
+//Constructor Function / Factory Function - Não precisa do operador new
