@@ -540,3 +540,6 @@ FIM EXEMPLO
 //Ice Factory =  Object.freeze() - evita que o usuário sobrescreva o retorno do objeto
 //Ice Factoty - se for em módulos, usar 'use strict'
 //Constructor Function / Factory Function - Não precisa do operador new
+
+//CLOSURE (CLAUSULA)
+//Escopo em relação a função pai - função dentro de função
