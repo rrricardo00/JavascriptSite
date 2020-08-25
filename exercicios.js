@@ -16,7 +16,7 @@ console.log(ultimo[ultimo.length - 1]); */
 //------------------ARROW FUNCTION------------------------------
 
 /* const imgs = document.querySelectorAll('img'); */
-/* 
+/*
 imgs.forEach(function(element, index, array) {
     console.log(element, index, array);
 
@@ -39,7 +39,7 @@ paragrafos.forEach(element => {
 /* const menu = document.querySelector('.menu'); */
 
 /* menu.classList; */
-/* 
+/*
 const h2 = document.querySelector('h2');
 const pegar = h2.getBoundingClientRect();
 
@@ -326,7 +326,7 @@ faq.appendChild(cloneH1); */
 //[].lastindexof(valor) - retorna o último index
 //[].slice(inicio, final) - retorna itens do inicio ao fim - usado para clonar arrays
 
-//ARRAY E ITEERAÇÃO-------------------------------
+//ARRAY E ITERAÇÃO-------------------------------
 //[].FOREACH(CALLBACK(ITEM,INDEX,ARRAY))
 //[].MAP - MESMO QUE O FOREACH, RETONAR ARRAY E NAO UNDEFINED
 //[].REDUCE(CALLBACK(ACUMULADOR,VALORATUAL,INDEX,ARRAY), VALORINICIAL) - ACUMULADOR É O RETORNO DA ITERAÇÃO ANTERIOR - FUNCIONA COMO 'INCREMENTO' - se não passar valorinicial, pula o primeiro acumulador no console, mas soma do mesmo jeito, fazendo uma iteração a menos
@@ -344,10 +344,202 @@ faq.appendChild(cloneH1); */
 //.APLLY(THIS, [ARG1, ARG2,......]) - MESMO DO CALL, ARGUMENTOS DA FUNÇÃO SÃO PASSADOS ATRAVEÉS DE UM ARRAY, PODE PASSAR NULL PARA O THIS
 //.BIND(this, arg1, arg 2) - NÃO EXECUTA A FUNÇÃO, RETORNA A MESMA COM NOVO CONTEXTO DO THIS, TERÁ QUE ATIVAR A FUNÇÃO DEPOIS. THIS COMO NULL RETORNA window
 
-
+//TUDO É OBJETO
 //OBJETOS---------------
 //OBJECT.CREATE(OBJETO, PROPRIEDADES)
 //CONT TESTE = {}
 //OBJECT.assign(alvo, obj1, obj2) - irá modificar o objeto alvo
-//OBJECT.defineProperties(alvo, propriedades) - adiciona ao alvo novas propriedades - define propriedades de um objeto imutáveis - há get e set
+//OBJECT.defineProperties(alvo, propriedades) - adiciona ao alvo novas propriedades - define propriedades de um objeto que serão imutáveis - há get e set
+//Object.getOwnPropertDescriptors(obj, 'tbm uma propriedade unica') - lista todos os métodos e propriedades
+//Object.key(obj)
+//Object.values(obj)
+//Object.entries(obj) - retorna as chves e os valores
+//Object.getPrototypeOf(obj)
+//Object.is(object1, object2) compara se são iguais
+//Object.freeze() - impede mudança nas mpropriedades
+//Object.seal() - previne add de novass propriedades e impede que atuais sejam deletadas
+//Object.preventExtensions() - previne add de novas propriedades
+//{}.constructor - retorna função construtora do objeto
+//{}.hasOwnProperty('propriedade')
+//{}.propertyIsEnumerable('propriedade')
+//{}.isPrototypeOf(valor) - verifica se é o protótipo do valor passado
+//{}.toString() - object.prototype.toString.call(objeto(ou this)); -> qual o tipo de objeto
 
+//DATASET----------------------------------
+// A propriedade HTMLElement.dataset permite o acesso, em modo de leitura e escrita, a todos os atributos de dados personalizado (data-*) no elemento. Ele é um mapa de DOMString, com uma entrada para cada atributo de dados personalizado.
+// O nome de um atributo de dados customizado inicia com data-. Ele deve conter somente letras, números e os seguintes caracteres: dash (-), dot (.), collon(:), underscore (_). Além disso, ele não deve conter letras ASCII captalizadas (A à Z)
+
+//MODULES-----------------------------------
+//nativo do es6
+//manunteção
+//compartilhamento
+//export default apenas para 1 exportação de dentro do módulo
+//import * as teste from '/path' - importa todas as funções de un módulo. Usar caso não saiba o nome das funções (ou qualuqer outra coisa) - tudo pode ser exportado
+
+//NAMED EXPORTS - Em módulos ao Exportar mais de um valor, usar {a,b,c} para especificar cada valor, nome importado deve ser igual ao exportado 
+//export funtion a() {}
+//export funtion b() {}
+//import {a, b} from 'path.js';
+//a();
+//b();
+//'use strict' - por padrão, modules estão no modo 'use strict'
+
+//SETTIMEOUT-------------------------------------
+//setTimeout(callback, tempo, arg1, arg2, ...) - metodo assíncrono que ativa o callback após tempo
+//se não passar tempo, entra na fila de callstak imediamtamente.
+//Loop com setTimeout------------------------------
+// for (let index = 0; index < 20; index++) {
+//     setTimeout(() => {
+//         console.log(index)
+//     }, 1000*index);
+// }
+//------------------------------------------------------
+//this - no setTimeout sempre será o window, tem q usar arrow fucntion, pois usa o contexto de this do objeto pai e não do objeto master (que seria window.setTimeout)
+//SETINTERVAL()-------------------------------
+//setInterval(callback, tempo, arg1, arg2,...) - ativa callback toda vez que a quantidade de tempo passar
+//clearInterval(var) - para o serinterval, precisa colocar  setInterval em uma variável
+
+//DATE---------------------------------------------------
+//const agora = new Date()
+//gettime() - mostar o tempo toal em milisegundos desde 1 de janeiro de 1970
+
+
+//AULA  timeStamp
+//------------------------------------------------------------
+// const agora = new Date();
+// const futuro = new Date('Dec 17 2020')
+// console.log(agora.getMonth())
+// console.log(futuro)
+
+
+// function transformar(tempo) {
+//     return Math.floor(tempo / (24 * 60 * 60 * 1000));
+// }
+
+// const a = agora.getTime()
+// const b = futuro.getTime()
+// const c= b-a;
+// console.log(transformar(c))
+//------------------------------------------------------------
+
+//FORMS------------------------------------------------
+//formulários
+//document.forms
+//document.forms.contato - form com nome contato
+//document.forms[0].elements[0].value - valor do primeiro
+//values - retorna o valor do elemento no formulário
+//evento 'keyup' - para ficar de olho no evento e puxar o valor sempre que ele mudar. (vai digitando e vai pegando o valor) - nao pega voz
+//evento 'change' dispara quando houver mudanças  (ativa o change quando muda o campo)
+
+//VALIDAÇÃO FORMS--------------------------------------------
+//checkValidity - verifica se input com required é válido
+//validationMessage possui a mensagem padrão de erro do browser
+//setCustomValidity('') - usado pra modificar a mensagem padrão de erro do browser
+
+//SÍNCRONO E ASSÍNCRONO
+// SÍNCRONO - Espera tarefa acabar para passar para a próxima
+// ASSÍNCRONO - Move para a próxima tarefa antes da anterior terminar. Trabalho será executado no 'fundo' e quanto terminado, será colocado na fila (task queue)
+//Ex: setTimeout, Ajax, Promises, Fetch, Async
+
+//PROMISES-----------------------------------------------
+//função construtora de promessas. 
+//then() - utilizado para continuar quando algo dá certo, podendo cascatear
+//catch() - para retornar um erro
+//finally() - executará a função anônima assim que a promessa acabar - executa se independente se resultado for rejeitado ou não
+//Promise.all([valores]); - Retornará uma nova promise assim que todas as promises dentro dela foram resolvidas ou pelo menos uma rejeitada. Retorna uma array com as respostas de cada Promise - espera o tempo da última promise resolver
+//Promise.race([valore]) - parecido com Promise.All() - diferença que a pimeira promise resolvida, vai resolver a promise do race.
+//Promises possuem o método then() - só será atuvado quando a promise for resolvida. O argumento da callback será o valor passado na função resolve
+//promesa.then(function (resolucao){
+// console.log(resolucao); -----------> vai imprimir o log 'deu certo'
+// });
+/*EXEMPLO:
+const promesa = new Promise(function(resolver, rejeitar){
+resolver('deu certo');
+rejeitar();
+});
+FIM EXEMPLO
+*/
+
+//FETCH API
+//PERMITE FAZER REQUISIÇÕES HTTP ATRAVÉS DO MÉTODO FETCH() - SEMPRE VAI RETORNAR UM RESPONSE
+//.text() - retorna o conteúdo - podem ser utilziados vários formatos, pegar html e trasnformar em texto
+//.jons() - retorna o json 
+//.blob() - tipo de objeto utilizado para representação de dados de um arquivo
+//.clone() - transformar uma resposta em diferentes valores e não modificar sempre o mesmo
+//pegar html de uma pagina trabahlar ela em outra página
+//.status e .ok - retorna o status da requisição = 200, 404, 300, 202, etc 
+//.url - retorna a url da requisição
+//.type - retorna o tipo da resposta (basic - requisição dentro do próprio servidor)
+
+//JSON-----------------------------------------------------------------------
+//aspas duplas - obrigatórias
+//organizador de dados
+//composto por chave e valor
+//interpretado em diferentes linguagens
+// JSON.parse() - transforma texto json em um objeto javascript
+// JSON.stringify() - transforma objeto json em uma string json
+
+
+//API-----------------------------------------------------------------------
+// Headers
+// Cache - Control
+// Tempo que o arquivo deve ficar em cache em segundos.Ex: public, max - age=3600
+// Content - Type
+// Tipo de conteúdo.Ex: text / html; charset = utf - 8. Indicar o tipo de arquivo principalmente em métodos POST e PUT.
+// Lista de Headers
+
+
+//METHODS
+// GET - Puxa informação, utilizado para pegar posts, usuários e etc.
+// POST - Utilizado para criar posts, usuários e etc.
+// PUT - Geralmente utilizado para atualizar informações.
+// DELETE - Deleta uma informação.
+// HEAD - Puxa apenas os headers.
+
+//HEADERS
+//cache-control
+//content-type
+//etc... (ver mozilla headers)
+
+//CORS
+//gerencia como deve ser o compartilhamento de recursos entre diferente origens.
+//Se o servidor não permitir o acesso, este será bloqueado. É possível passar por cima do bloqueio utilizando um proxy.
+
+//ASYNC / AWAIT-----------------------------------------------------------------
+//função possui partes assíncronas e que você pretende esperar a resolução da mesma antes de continuar. O await irá indicar a promise que devemos esperar.
+//await só vai na parte que retornam promesas, ex: await fetch('url');
+//O resultado da expressão à frente de await tem que ser uma promise. 
+//try / catch
+
+//HISTORY API-----------------------------------------------------------------
+//window.history
+//window.history.back()
+//window.history.forward()
+//window.history.pushState(null, null, string) - será mais usado com fetch
+//popstate - eventListener, executa função quando clicar no botão "voltar" ou "próximo", só ativa quando tiver um pushState 
+
+//CLASSE-----------------------------------------------------------------
+//FUNCAO CONSTRUTORA = CRIAR OBEJTOS, function classe(item1, item2){this.item1 = "x"; this.item2 = "y"} - new classe("ex1", "ex2");
+//class
+//syntactical sugar - usa sistema de protótipos de uma funcao construtuora para criar a classe
+//static - diferente de prototype, nao precisara criar um novo objeto, podera acessar a funcao direta. exemplo: const botao = botao.funcaoEstatica();
+//static - nao tem como acessar por protoipo, tem que acessar direto
+//static - mais utilizado para retornar criação de um objeto com valores já predefinidos: return new Button('ex1', 'ex2')
+//get
+//set
+//subClasses - extends
+//super - usado para acessar a classe pai e acesar seus metodos e propriedades
+
+//FUNCTION EXPRESSION-----------------------------------------------------------------
+//delcarar função a partir de uma variável - const somar = function(a, b){return a+b}
+//codigo tem que vir apos, pois vai para dead zone antes no hoisting
+
+//FACTORY FUNCTION-----------------------------------------------------------------
+//Não precisa do operador new
+//possibilidade de criar métodos e variáveis privados - só nao retornar o objeto
+//Ice Factory =  Object.freeze() - evita que o usuário sobrescreva o retorno do objeto
+//Ice Factoty - se for em módulos, usar 'use strict'
+//Constructor Function / Factory Function - Não precisa do operador new
+
+//CLOSURE (CLAUSULA)
+//Escopo em relação a função pai - função dentro de função
