@@ -36,7 +36,7 @@ function initAccordion() {
             this.nextElementSibling.classList.toggle(activeClass)
         }
 
-        accordionList.forEach((item) => {;
+        accordionList.forEach((item) => {
             item.addEventListener('click', activeAccordion);
         });
     }
