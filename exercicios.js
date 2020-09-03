@@ -543,3 +543,8 @@ FIM EXEMPLO
 
 //CLOSURE (CLAUSULA)
 //Escopo em relação a função pai - função dentro de função
+
+//DESTRUCTURING-----------------------------------------------------------------
+//Permite a desestruturação de Arrays e Objetos. Atribuindo suas propriedades à novas variáveis.
+//A desestruturação irá facilitar a manipulação de dados. Principalmente quando temos uma grande profundidade de objetos
+//NESTING - é possível aninhar uma desestruturação dentro de outra.
