@@ -548,3 +548,5 @@ FIM EXEMPLO
 //Permite a desestruturação de Arrays e Objetos. Atribuindo suas propriedades à novas variáveis.
 //A desestruturação irá facilitar a manipulação de dados. Principalmente quando temos uma grande profundidade de objetos
 //NESTING - é possível aninhar uma desestruturação dentro de outra.
+//Caso a propriedade não exista o valor padrão dela será undefined. É possível modificar este valor no momento da desestruturação.
+//ARRAYS - Para desestruturar array's você deve colocar as variáveis entre [] colchetes.

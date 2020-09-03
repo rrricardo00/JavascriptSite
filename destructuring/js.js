@@ -1,9 +1,9 @@
 const carro = {
-    marca: "honda",
-    ano: 2020
+  marca: "honda",
+  ano: 2020
 }
 
-const {marca, ano} = carro;
+const { marca, ano } = carro;
 
 console.log(marca, ano)
 
@@ -11,18 +11,18 @@ console.log(marca, ano)
 //-------------------------------------
 
 const cliente = {
-    nome: 'Andre',
-    compras: {
-      digitais: {
-        livros: ['Livro 1', 'Livro 2'],
-        videos: ['Video JS', 'Video HTML']
-      },
-      fisicas: {
-        cadernos: ['Caderno 1']
-      }
+  nome: 'Andre',
+  compras: {
+    digitais: {
+      livros: ['Livro 1', 'Livro 2'],
+      videos: ['Video JS', 'Video HTML']
+    },
+    fisicas: {
+      cadernos: ['Caderno 1']
     }
   }
-  
+}
+
 // const {livros, videos} = cliente.compras.digitais;
 
 // console.log(livros);
@@ -32,33 +32,43 @@ const cliente = {
 //NESTING-------------------------------------
 
 const cliente2 = {
-    nome: 'Ricardo',
-    compras: {
-      digitais: {
-        livros: ['Livro 1', 'Livro 2'],
-        videos: ['Video JS', 'Video HTML']
-      },
-      fisicas: {
-        cadernos: ['Caderno 1']
-      }
+  nome: 'Ricardo',
+  compras: {
+    digitais: {
+      livros: ['Livro 1', 'Livro 2'],
+      videos: ['Video JS', 'Video HTML']
+    },
+    fisicas: {
+      cadernos: ['Caderno 1']
     }
   }
-  
-  const {fisicas, digitais, digitais: {livros, videos}} = cliente2.compras;
-  
-  console.log(fisicas);
-  console.log(livros);
-  console.log(videos);
-  console.log(digitais);
-  
+}
 
-  //PROPRIEDADES
+const { fisicas, digitais, digitais: { livros, videos } } = cliente2.compras;
 
-  const cliente3 = {
-      nome: "Ricardo",
-      compras: 200
-  }
+console.log(fisicas);
+console.log(livros);
+console.log(videos);
+console.log(digitais);
 
 
-  const {nome: nomeRicardo, email = "email@gmail.com"} = cliente3; //mudar variavel nome para nomeRicardo
-  console.log(nomeRicardo, email)
+//PROPRIEDADES
+
+const cliente3 = {
+  nome: "Ricardo",
+  compras: 200
+}
+
+
+const { nome: nomeRicardo, email = "email@gmail.com" } = cliente3; //mudar variavel nome para nomeRicardo
+console.log(nomeRicardo, email)
+
+//ARRAYS----------------------------------------------
+const frutas = ['Banana', 'Uva', 'Morango'];
+
+const primeiraFruta = frutas[0];
+const segundaFruta = frutas[1];
+const terceiraFruta = frutas[2];
+
+// Com destructuring
+const [primeira, segunda, terceira] = frutas;
