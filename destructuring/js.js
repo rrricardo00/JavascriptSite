@@ -85,7 +85,7 @@ const [primeira, segunda, terceira] = frutas;
 
 // COM DESTRUCTURING
 function handleKeyboard({key, keyCode}) {
-  console.log(key, keyCode);
+  // console.log(key, keyCode);
 }
 
 
