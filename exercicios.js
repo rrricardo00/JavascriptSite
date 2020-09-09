@@ -550,3 +550,28 @@ FIM EXEMPLO
 //NESTING - é possível aninhar uma desestruturação dentro de outra.
 //Caso a propriedade não exista o valor padrão dela será undefined. É possível modificar este valor no momento da desestruturação.
 //ARRAYS - Para desestruturar array's você deve colocar as variáveis entre [] colchetes.
+
+//REST E SPREAD-------------------------------------------------------------------
+//Com o ES6 é possível definirmos o valor de um parâmetro direto na declaração do mesmo, caso o argumento não seja passado no momento da execução. Ex: function perimetroForma(lado, totalLados = 4) {return lado * totalLados;}
+//arguemnts - A palavra chave arguments é um objeto Array-like criado dentro da função. Esse objeto contém os valores dos argumentos.
+//Parametro Rest - É possível declararmos uma parâmetro utilizando ... na frente do mesmo. Assim todos os argumentos que passarmos na ativação da função, ficarão dentro do parâmetro. Só é possível ter um único parâmetro rest e ele deve ser o último. Podemos colocar os outros parametros antes sequencialmente.
+//Apesar de parecidos o parâmetro rest e a palavra arguments possuem grandes diferenças. Sendo rest uma array real e arguments um objeto Array-like. Rest: function anunciarGanhadores(premio, ...ganhadores) {console.log(ganhadores);console.log(arguments);}
+//Spread - não é utilizado como parâme tro igual rest - Assim como o rest, o operador Spread também utiliza os ... para ser ativado. O spread irá distribuir um item iterável, um por um, ou seja, pega um array e distribui 1 por 1 Ex:
+//Spread--------exemplo
+// const frutas = ['Banana', 'Uva', 'Morango'];
+// const legumes = ['Cenoura', 'Batata'];
+// const comidas = [...frutas, 'Pizza', ...legumes];
+//Spread--------exemplo 
+//O Spread pode ser muito útil para funções que recebem uma lista de argumentos ao invés de uma array - const listaNumeros = [1,13,21,12,55,2,3,43]; const numeroMaximoSpread = Math.max(...listaNumeros);
+//É possível transformar itens iteráveis em uma array real com o spread - const btns = document.querySelectorAll('button'); const btnsArray = [...btns];
+
+
+//Loops e Iterable---------------------------------------------------------------
+//Iterable - São objetos que possuem o método [Symbol.iterator], geralmente no protótipo, é dentro dele que a função que lida com a iteração será definida. Ex: Array, String, NodeList, boa parte das Array-Like e outros.
+//É possível fazemos um loop por cada iteração do objeto iterável utilizando o for...of. Além deste loop podemos também utilizar o Spread Operator nos mesmos.
+//Spread e for...of - Com o for loop podemos manipular cada um dos elementos do objeto iterável.
+//O for...of não irá funcionar em um objeto comum que não seja iterável.
+//for...in - Este loop irá retornar a chave (key) de todas as propriedades enumeráveis (que não sejam símbolos) de um objeto. Apenas aquelas que são enumeraveis serão retornadas
+//Arrays e for...in - Uma Array é um objeto, porém a chave de cada valor é igual ao seu index.
+//Chave e Valor - Utilizando o for...in podemos retornar todas as chaves e valores de propriedades enumeráveis.
+//Outro tipo de loop é o Do / While. Não é muito utilizado.
