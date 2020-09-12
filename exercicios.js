@@ -586,3 +586,4 @@ FIM EXEMPLO
 //Character Class e Especiais - Podemos utilizar caracteres que não são alfanuméricos dentro da classe. Mas fique atento, pois existem diversos casos especiais para os mesmos. const regexp = /[-.]/g;
 //Um ou Outro Combine caracteres literais com uma classe para buscarmos variações: Ju[nl]ho busca Julho ou Junho
 //De A à Z - O traço - dentro de [] pode servir para definirmos um alcance. [A-Z] irá buscar os caracteres de A à Z. [0-9] busca de 0 à 9. A tabela UNICODE é utilizada como referência para definir os caracteres dentro do alcance.
+//Negar - Utilizando o acento circunflexo podemos negar caracteres. Ou seja, pegue tudo que não seja [^a]
