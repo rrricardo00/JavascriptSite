@@ -575,3 +575,14 @@ FIM EXEMPLO
 //Arrays e for...in - Uma Array é um objeto, porém a chave de cada valor é igual ao seu index.
 //Chave e Valor - Utilizando o for...in podemos retornar todas as chaves e valores de propriedades enumeráveis.
 //Outro tipo de loop é o Do / While. Não é muito utilizado.
+
+//Regular Expression-------------------------------------------------------------
+// Regexp ou Regex são expressões utilizadas para realizarmos buscas / substituições de padrões em strings. Os padrões devem ser colocados entre //. Geralmente vamos utilizá-las nos métodos .replace() e .split().
+//USAR TABELA UNICODE PARA SABER DE QUAL ATÉ QUAL PEGAR
+//Utilizar um caracter literal irá realizar uma busca específica deste caracter.
+// As flags irão modificar como a expressão é interpretada. Uma das mais utilizadas é a g, que significa global, ou seja, retorne todos os resultados que estiverem dentro do padrão e não apenas o primeiro. A flag deve ser colocada no final da expressão.
+// Com o i informamos que devem ser ignoradas as diferenças entre maiúsculas e minúsculas. Isso significa que /a/ irá buscar por a e A.
+//Character Class - Se colocarmos os caracteres entre colchetes, estamos definindo uma classe. /[ab]/ irá procurar por a ou por b.
+//Character Class e Especiais - Podemos utilizar caracteres que não são alfanuméricos dentro da classe. Mas fique atento, pois existem diversos casos especiais para os mesmos. const regexp = /[-.]/g;
+//Um ou Outro Combine caracteres literais com uma classe para buscarmos variações: Ju[nl]ho busca Julho ou Junho
+//De A à Z - O traço - dentro de [] pode servir para definirmos um alcance. [A-Z] irá buscar os caracteres de A à Z. [0-9] busca de 0 à 9. A tabela UNICODE é utilizada como referência para definir os caracteres dentro do alcance.
