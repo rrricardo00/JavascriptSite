@@ -581,9 +581,22 @@ FIM EXEMPLO
 //USAR TABELA UNICODE PARA SABER DE QUAL ATÉ QUAL PEGAR
 //Utilizar um caracter literal irá realizar uma busca específica deste caracter.
 // As flags irão modificar como a expressão é interpretada. Uma das mais utilizadas é a g, que significa global, ou seja, retorne todos os resultados que estiverem dentro do padrão e não apenas o primeiro. A flag deve ser colocada no final da expressão.
-// Com o i informamos que devem ser ignoradas as diferenças entre maiúsculas e minúsculas. Isso significa que /a/ irá buscar por a e A.
+// Com o i informamos que devem ser ignoradas as diferenças entre maiúsculas e minúsculas. Isso significa que /a/i irá buscar por a e A.
 //Character Class - Se colocarmos os caracteres entre colchetes, estamos definindo uma classe. /[ab]/ irá procurar por a ou por b.
 //Character Class e Especiais - Podemos utilizar caracteres que não são alfanuméricos dentro da classe. Mas fique atento, pois existem diversos casos especiais para os mesmos. const regexp = /[-.]/g;
 //Um ou Outro Combine caracteres literais com uma classe para buscarmos variações: Ju[nl]ho busca Julho ou Junho
 //De A à Z - O traço - dentro de [] pode servir para definirmos um alcance. [A-Z] irá buscar os caracteres de A à Z. [0-9] busca de 0 à 9. A tabela UNICODE é utilizada como referência para definir os caracteres dentro do alcance.
 //Negar - Utilizando o acento circunflexo podemos negar caracteres. Ou seja, pegue tudo que não seja [^a]
+//O ponto . irá selecionar qualquer caracter, menos quebras de linha.
+//Escapar Especiais - Caracteres especiais como o ponto ., podem ser escapados utilizando a barra \, assim este não terá mais a sua função especial e será tratado como literal. Lista de caracteres especiais: +*?^$\.[]{}()|/
+//Word - O \w irá selecionar qualquer caracter alfanumérico e o underline. É a mesma coisa que [A-Za-z0-9_]
+//Not Word - O \W irá selecionar tudo o que não for caracter alfanumérico e o underline. É a mesma coisa que [^A-Za-z0-9_].
+//Digit - O \d irá selecionar qualquer dígito. É a mesma coisa que [0-9].
+//Not Digit - O \D irá selecionar tudo que não for dígito. É a mesma coisa que [^0-9].
+//Whitespace - O \s irá selecionar qualquer espaço em branco, isso inclui espaços, tabs, quebra de linhas.
+//Not Whitespace - O \S irá selecionar qualquer caracter que não for espaço em branco. - /[\s\S]/g irá selecionar tudo.
+//Quantificador - É possível selecionar caracteres seguidos, como /bbb/g irá selecionar apenas bbb. Com as chaves podemos indicar a repetição /b{3}/g. Agora ele está fazendo uma seleção completa e não caracter por caracter.
+//Quantificador Min e Max - Podemos informar o min e max do quantificador /a{2,4}/ vai selecionar quando aparecer a duas vezes ou até 4 vezes. /a{2,}/ irá selecionar quando se repetir duas ou mais vezes
+//Mais - O sinal de + significa que devemos selecionar quando existir pelo menos uma ou mais ocorrências. 
+//Asterisco  -  sinal * significa que devemos selecionar quando existir 0 ou mais ocorrências. ex: 'Dígitos, dados, desenhos, Dito, d'.replace(regexp, 'X'); -> Dígitos, X, X, Dito, X 
+//Opcional - O sinal ? significa que o caracter é opcional, pode ou não existir.
