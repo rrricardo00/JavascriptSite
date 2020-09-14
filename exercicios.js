@@ -600,3 +600,9 @@ FIM EXEMPLO
 //Mais - O sinal de + significa que devemos selecionar quando existir pelo menos uma ou mais ocorrências. 
 //Asterisco  -  sinal * significa que devemos selecionar quando existir 0 ou mais ocorrências. ex: 'Dígitos, dados, desenhos, Dito, d'.replace(regexp, 'X'); -> Dígitos, X, X, Dito, X 
 //Opcional - O sinal ? significa que o caracter é opcional, pode ou não existir.
+//Alternado - O sinal | irá selecionar um ou outro. java|php
+//Word Boundary - O sinal \b irá indicar que pretendemos fazer uma seleção que deve ter início e fim de não caracteres \w. exe: //\bpalavra\b, o b indica nao caracter. podendo ser espaços
+//Not Word Boundary \B - É o contrário do \b.
+//Anchor Beginning - om o ^ é possível informar que a busca deve ser iniciada no início da linha.
+//Anchor End - Com o $ é possível informar que a busca deve ser iniciada no final da linha.
+//Flag: m - Com a flag m de multiline, podemos informar que a busca de início ^ e final $ de linha devem ocorrer em todas as linhas disponíveis.
