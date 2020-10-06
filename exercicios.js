@@ -606,3 +606,14 @@ FIM EXEMPLO
 //Anchor Beginning - Com o ^ é possível informar que a busca deve ser iniciada no início da linha.
 //Anchor End - Com o $ é possível informar que a busca deve ser iniciada no final da linha.
 //Flag: m - Com a flag m de multiline, podemos informar que a busca de início ^ e final $ de linha devem ocorrer em todas as linhas disponíveis.
+//Line Feed - O \n irá selecionar o final de uma linha, quando criamos uma nova. 
+// \t seleciona tabs
+//Unicode - O \u irá selecionar o respectivo caracter unicode, de acordo com o código passado em \uXXXX. Ex: \u0040 seleciona o @.
+//Referência da Seleção - É possível utilizarmos o $& durante o momento da substituição para fazermos uma referência à seleção.
+//Grupo de Captura - É possível definirmos diferentes grupos de captura, que poderão ser referenciados durante a substituição. Basta envolvermos um grupo entre () parênteses. A referência se cada grupo será feita com $n, sendo o primeiro $1. - Não use este regexp para emails, ele falha em alguns casos.
+//Mais de um Grupo - Podemos definir quantos grupos de captura quisermos.
+//Mais do que Captura apenas - Um grupo também serve para agruparmos uma sequência de caracteres que queremos em repetição.
+//Ignorar Captura - Utilize o (?:) para ignorar a captura.
+//Positive Lookahead - Faz a seleção dos itens que possuírem o padrão dentro de (?=) à sua frente. Apesar de utilizar () parênteses o positive lookahead não captura grupo.
+//Negative Lookahead - Faz a seleção dos itens não possuírem o padrão dentro de (?!) à sua frente.
+//Positive Lookbehind - Faz a seleção dos itens que possuírem o padrão dentro de (?<=) atrás dos mesmos.
