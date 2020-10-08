@@ -617,3 +617,4 @@ FIM EXEMPLO
 //Positive Lookahead - Faz a seleção dos itens que possuírem o padrão dentro de (?=) à sua frente. Apesar de utilizar () parênteses o positive lookahead não captura grupo.
 //Negative Lookahead - Faz a seleção dos itens não possuírem o padrão dentro de (?!) à sua frente.
 //Positive Lookbehind - Faz a seleção dos itens que possuírem o padrão dentro de (?<=) atrás dos mesmos.
+//
