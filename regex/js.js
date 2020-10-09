@@ -107,7 +107,7 @@ for(tag of tags) {
   console.log(tag, tag.match(regexpTAG));
 }
 
-const regexpTAG = /(?<=<\/?)[\w]+/gi;
+const regexpTAG2 = /(?<=<\/?)[\w]+/gi;
 
 const tags = [
   '<div>Isso é uma div</div>',
@@ -120,5 +120,5 @@ const tags = [
 ];
 
 for(tag of tags) {
-  console.log(tag, tag.match(regexpTAG));
+  console.log(tag, tag.match(regexpTAG2));
 }
